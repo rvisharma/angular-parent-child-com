@@ -1,0 +1,8 @@
+<h2>Movie Tonight ?</h2>
+<button (click)="reset()">Reset ?</button>
+<hr/>
+<app-movie-answer-child [users]="users"></app-movie-answer-child>
+
+<div *ngFor="let log of log$ | async">
+  {{log}}
+</div>

@@ -1,0 +1,38 @@
+*{
+  font-family: Lato;
+  box-sizing: border-box;
+}
+
+:host{
+  padding: 2rem;
+}
+
+.title{
+  color:brown;
+  font-size: 2rem;
+}
+
+details{
+  margin: 0.4rem 0;
+  padding: 0.5rem; 
+  border: 0.2rem solid #eee;
+
+  background-color: beige;
+}
+
+details summary{
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+details[open]{
+  background-color: bisque;
+  
+}
+
+details[open] summary{
+  border-bottom: 0.15rem solid rosybrown;
+  padding-bottom: 0.7rem;
+}
+

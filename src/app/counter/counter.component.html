@@ -1,0 +1,11 @@
+<h2>Counter</h2>
+<h3>{{counter.count}}</h3>
+<div>
+	<button (click)="counter.inc()">Increment</button>
+	<button (click)="counter.dec()">Decrement</button>
+</div>
+
+<p>
+	Child Component
+	<app-counter-interface #counter></app-counter-interface>
+</p>

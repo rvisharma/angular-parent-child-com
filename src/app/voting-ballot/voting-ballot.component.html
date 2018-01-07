@@ -1,0 +1,8 @@
+<h1>Voting Ballot</h1>
+<h3>Red - {{red}} || Black - {{black}}</h3>
+<hr/>
+<p> Total Voters Voters - {{voters.length}}</p>
+<ul>
+	<app-voter (vote)="handleVote($event)" *ngFor="let voter of voters" [name]="voter.name">
+	</app-voter>
+</ul>
